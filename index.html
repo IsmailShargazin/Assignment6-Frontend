@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6 | jQuery Basics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>jQuery Practice</h1>
+        <p>Ismail Shargazin · SE-2529</p>
+    </header>
+
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Basics</a>
+        <a href="effects.html">Effects</a>
+        <a href="dom.html">DOM</a>
+        <a href="animations.html">Animations</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <main>
+        <section class="task">
+            <h2>Task 0. Setup</h2>
+            <p>Connecting jQuery and checking that it works.</p>
+            <p id="status">Waiting for jQuery...</p>
+        </section>
+
+        <section class="task">
+            <h2>Task 1. Selectors and CSS</h2>
+            <p>Click the buttons to change the content and styles.</p>
+
+            <div class="demo-area">
+                <h3 id="collectionTitle">Sneakers Collection</h3>
+                <p class="description">Discover our latest sneakers.</p>
+                <p class="description">Find your everyday pair.</p>
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="changeText">Change text</button>
+                <button type="button" id="changeHtml">Change HTML</button>
+                <button type="button" id="changeStyles">Change styles</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Web Technologies · Assignment 6</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6 | jQuery Effects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>jQuery Effects</h1>
+        <p>Ismail Shargazin · SE-2529</p>
+    </header>
+
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">Basics</a>
+        <a href="effects.html" aria-current="page">Effects</a>
+        <a href="dom.html">DOM</a>
+        <a href="animations.html">Animations</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <main>
+        <section class="task">
+            <h2>Task 2. Visibility Methods</h2>
+            <p>Show or hide the text using the buttons.</p>
+
+            <div class="demo-area visibility-area">
+                <p id="visibilityText">
+                    Comfortable sneakers are a good choice for everyday wear.
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="hideBtn">Hide</button>
+                <button type="button" id="showBtn">Show</button>
+                <button type="button" id="toggleBtn">Toggle</button>
+            </div>
+        </section>
+
+        <section class="task">
+            <h2>Task 3. Fade Methods</h2>
+            <p>Make the image appear or disappear gradually.</p>
+
+            <div class="demo-area image-area">
+                <img
+                    id="fadeImage"
+                    class="demo-image"
+                    src="images/sneaker.jpg"
+                    alt="Sneaker from the collection"
+                >
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="fadeInBtn">Fade In</button>
+                <button type="button" id="fadeOutBtn">Fade Out</button>
+                <button type="button" id="fadeToggleBtn">Fade Toggle</button>
+            </div>
+        </section>
+
+        <section class="task">
+            <h2>Task 4. Slide Methods</h2>
+            <p>Expand or collapse the information panel.</p>
+
+            <div id="infoPanel" class="slide-panel">
+                <h3>Sneaker Care Tips</h3>
+                <ul>
+                    <li>Clean your sneakers with a soft brush.</li>
+                    <li>Let them dry at room temperature.</li>
+                    <li>Keep them in a dry place.</li>
+                </ul>
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="slideUpBtn">Slide Up</button>
+                <button type="button" id="slideDownBtn">Slide Down</button>
+                <button type="button" id="slideToggleBtn">Slide Toggle</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Web Technologies · Assignment 6</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="effects.js"></script>
+</body>
+</html>

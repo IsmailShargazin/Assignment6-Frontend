@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6 | Sneaker Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sneaker Gallery</h1>
+        <p>Ismail Shargazin · SE-2529</p>
+    </header>
+
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">Basics</a>
+        <a href="effects.html">Effects</a>
+        <a href="dom.html">DOM</a>
+        <a href="animations.html">Animations</a>
+        <a href="gallery.html" aria-current="page">Gallery</a>
+    </nav>
+
+    <main>
+        <section class="task">
+            <h2>Task 11. Interactive Image Gallery</h2>
+            <p>Click a thumbnail to view a larger image.</p>
+
+            <div class="gallery-viewer">
+                <img
+                    id="galleryImage"
+                    src="images/sneaker.jpg"
+                    alt="Everyday sneakers"
+                >
+            </div>
+
+            <p id="imageCaption" class="image-caption" aria-live="polite">
+                Everyday sneakers
+            </p>
+
+            <div class="thumbnail-grid">
+                <button
+                    type="button"
+                    class="gallery-thumb selected"
+                    aria-label="View everyday sneakers"
+                    aria-pressed="true"
+                >
+                    <img
+                        src="images/sneaker.jpg"
+                        alt="Everyday sneakers"
+                    >
+                </button>
+
+                <button
+                    type="button"
+                    class="gallery-thumb"
+                    aria-label="View running sneakers"
+                    aria-pressed="false"
+                >
+                    <img
+                        src="images/sneaker2.jpg"
+                        alt="Running sneakers"
+                    >
+                </button>
+
+                <button
+                    type="button"
+                    class="gallery-thumb"
+                    aria-label="View casual sneakers"
+                    aria-pressed="false"
+                >
+                    <img
+                        src="images/sneaker3.jpg"
+                        alt="Casual sneakers"
+                    >
+                </button>
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="showGalleryBtn">
+                    Show Thumbnails
+                </button>
+                <button type="button" id="hideGalleryBtn">
+                    Hide Thumbnails
+                </button>
+                <button type="button" id="toggleGalleryBtn">
+                    Toggle Thumbnails
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Web Technologies · Assignment 6</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>

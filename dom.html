@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6 | DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DOM Manipulation</h1>
+        <p>Ismail Shargazin · SE-2529</p>
+    </header>
+
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">Basics</a>
+        <a href="effects.html">Effects</a>
+        <a href="dom.html" aria-current="page">DOM</a>
+        <a href="animations.html">Animations</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <main>
+        <section class="task">
+            <h2>Task 5. Add and Remove Elements</h2>
+            <p>Add items to the end or beginning of the list.</p>
+
+            <div class="demo-area">
+                <ul id="sneakerList">
+                    <li>Sneaker 1</li>
+                    <li>Sneaker 2</li>
+                    <li>Sneaker 3</li>
+                </ul>
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="appendBtn">Add Item</button>
+                <button type="button" id="prependBtn">Add to Start</button>
+                <button type="button" id="removeBtn">Remove Last Item</button>
+            </div>
+        </section>
+
+        <section class="task">
+            <h2>Task 6. Modifying Attributes</h2>
+            <p>Change the image and the destination of the link.</p>
+
+            <div class="demo-area image-area">
+                <img
+                    id="productImage"
+                    class="demo-image"
+                    src="images/sneaker.jpg"
+                    alt="First sneaker"
+                >
+            </div>
+
+            <p>
+                <a
+                    id="storeLink"
+                    href="https://www.nike.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >Visit Nike</a>
+            </p>
+
+            <div class="buttons">
+                <button type="button" id="changeImageBtn">Change Image</button>
+                <button type="button" id="changeLinkBtn">Change Link</button>
+            </div>
+        </section>
+
+        <section class="task">
+            <h2>Task 7. Form Interaction</h2>
+            <p>Type your name and email to see them below.</p>
+
+            <form id="profileForm">
+                <div class="form-field">
+                    <label for="nameInput">Name</label>
+                    <input
+                        type="text"
+                        id="nameInput"
+                        name="name"
+                        placeholder="Enter your name"
+                        autocomplete="name"
+                    >
+                </div>
+
+                <div class="form-field">
+                    <label for="emailInput">Email</label>
+                    <input
+                        type="email"
+                        id="emailInput"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                    >
+                </div>
+            </form>
+
+            <div class="demo-area live-preview">
+                <h3>Live Preview</h3>
+                <p>Name: <span id="liveName">—</span></p>
+                <p>Email: <span id="liveEmail">—</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Web Technologies · Assignment 6</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="dom.js"></script>
+</body>
+</html>

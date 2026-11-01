@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6 | Animations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>jQuery Animations</h1>
+        <p>Ismail Shargazin · SE-2529</p>
+    </header>
+
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">Basics</a>
+        <a href="effects.html">Effects</a>
+        <a href="dom.html">DOM</a>
+        <a href="animations.html" aria-current="page">Animations</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <main>
+        <section class="task">
+            <h2>Task 8. Basic Animation</h2>
+            <p>The square grows and moves to a new position.</p>
+
+            <div id="basicStage" class="animation-stage">
+                <div id="basicBox" class="animation-box"></div>
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="basicBtn">Start Animation</button>
+            </div>
+        </section>
+
+        <section class="task">
+            <h2>Task 9. Sequential Animations</h2>
+            <p>The square moves right, moves down, shrinks and returns.</p>
+
+            <div id="sequenceStage" class="animation-stage">
+                <div id="sequenceBox" class="animation-box"></div>
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="sequenceBtn">Start Sequence</button>
+            </div>
+        </section>
+
+        <section class="task">
+            <h2>Task 10. Combined Animation</h2>
+            <p>The square changes its size, position and opacity together.</p>
+
+            <div id="combinedStage" class="animation-stage">
+                <div id="combinedBox" class="animation-box"></div>
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="combinedBtn">Start Combined</button>
+            </div>
+        </section>
+
+        <div class="buttons">
+            <button type="button" id="resetAnimationsBtn">Reset All</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Web Technologies · Assignment 6</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="animations.js"></script>
+</body>
+</html>
